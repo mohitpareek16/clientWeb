@@ -19,7 +19,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Silder from "./Silder"
 import ReactPlayer from "react-player";
 import background from "./img/Vector 30.svg"
-import videoimg from "./img/bg.png"
+import videoimg from "./img/bg (2).png"
 import bgimg from "./img/Image.png"
 import logo from "./img/KONTENTLOGOPNG2.png"
 import fabicon from "./img/icon.png"
@@ -27,7 +27,7 @@ import profile from "./img/image 322.jpg"
 import linkedin from "./img/LinkedinLogo.png"
 import companyLogo from "./img/Logo 5.png"
 
-;
+  ;
 // import youtubeLogo from "./img/YouTube-Logo-2017-present.jpg"
 function App() {
 
@@ -40,31 +40,37 @@ function App() {
   return (
     <div className="app">
       <div className="navbar">
+        <div className="fix" >
+          <a href="#"><img src={logo} alt="logo" className='grow' /></a>
 
-        <a href="#"><img src={logo} alt="logo" /></a>
-        <div className="menu" >
-          <a href="#" className='active'>Home</a>
-          <a href="#">Testmonials</a>
-          <a href="#">Our Services</a>
-          <a href="#">About Us</a>
+          {/* <a href="#primary" class="menu-link">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </a>
+  
+          <ul id="primary"> */}
+            <div className="menu"  >
+              <a href="#home" className='grow'>Home</a>
+              <a href="#testmonials" className='grow'>Testmonials</a>
+              <a href="#service" className='grow'>Our Services</a>
+              <a href="#about_founder" className='grow'>About Us</a>
+
+            </div>
+          <button class="custom-btn grow "> <a href="#foot" ><span>Contact Us</span></a> </button>
+          {/* </ul> */}
         </div>
-        <button class="custom-btn btn-3"><span>Contact Us</span></button>
-      </div>
 
-      <div className='hersect' data-aos="fade-up"
+      </div>
+      <div id="home" ></div>
+      <div className='hersect' id="home" data-aos="fade-up"
         data-aos-anchor-placement="top-bottom" >
 
-        <h1 data-aos="fade-up"
-          data-aos-anchor-placement="top-center">Creating <span>content</span> that captures <span>attention</span> </h1>
-        <h2 data-aos="fade-up"
-          data-aos-anchor-placement="top-center">We help brands grow by unleashing the potential of social media 🚀</h2>
-        <div className='btnsect'>
-          {/* <button className='custom-btn btn-3'><a href="#">Contact Us</a></button> */}
-          <button class="custom-btn btn-3"><span>Contact Us</span></button>
-          {/* <button className='btn-sec'><a href="#">About Us</a></button> */}
-          <a href="#" class="button2">About us</a>
+        <h1 >Creating <span>content</span> that captures <span>attention</span> </h1>
+        <h2 >We help brands grow by unleashing the potential of social media 🚀
+          We help brands grow by unleashing the potential of social media 🚀
+          We help brands grow by unleashing the potential of social media 🚀</h2>
 
-        </div>
       </div>
 
       <div className='youtube-video' data-aos="fade-up"
@@ -75,6 +81,8 @@ function App() {
           data-aos-anchor-placement="top-center"
         />
       </div>
+
+      <div id="testmonials"></div>
 
 
       <div className='client-slider' data-aos="fade-up"
@@ -92,7 +100,7 @@ function App() {
             <path d="M1286 93.9003C728.43 168.221 197.012 87.5867 1 37.9798V1H1286V44.2934V93.9003Z" fill="#0E0C12" stroke="#0E0C12" />
           </svg>
         </div>
-        <Silder  />
+        <Silder />
         <div className="center part2" >
 
           <div className="line2" data-aos="fade-up"
@@ -114,6 +122,9 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div id="service"></div>
+
       <div className='services' data-aos="fade-up"
         data-aos-anchor-placement="top-bottom">
         <h4 data-aos="fade-up"
@@ -125,7 +136,7 @@ function App() {
             data-aos-anchor-placement="top-center">
             <div className='frame'>
               <img className='upper' src={videoimg} alt="bg" />
-              <img className='bg' src={bgimg} alt="bg" />
+              {/* <img className='bg' src={bgimg} alt="bg" /> */}
             </div>
             <div className='content'>
               <h1 className='title'> Video Editing  </h1>
@@ -140,7 +151,7 @@ function App() {
             data-aos-anchor-placement="top-center">
             <div className='frame'>
               <img className='upper' src={videoimg} alt="bg" />
-              <img className='bg' src={bgimg} alt="bg" />
+              {/* <img className='bg' src={bgimg} alt="bg" /> */}
             </div>
             <div className='content'>
               <h1 className='title'> Video Editing  </h1>
@@ -155,7 +166,7 @@ function App() {
             data-aos-anchor-placement="top-center">
             <div className='frame'>
               <img className='upper' src={videoimg} alt="bg" />
-              <img className='bg' src={bgimg} alt="bg" />
+              {/* <img className='bg' src={bgimg} alt="bg" /> */}
             </div>
             <div className='content'>
               <h1 className='title'> Video Editing  </h1>
@@ -170,7 +181,7 @@ function App() {
             data-aos-anchor-placement="top-center">
             <div className='frame'>
               <img className='upper' src={videoimg} alt="bg" />
-              <img className='bg' src={bgimg} alt="bg" />
+              {/* <img className='bg' src={bgimg} alt="bg" /> */}
             </div>
             <div className='content'>
               <h1 className='title'> Video Editing  </h1>
@@ -184,18 +195,16 @@ function App() {
       </div>
 
 
+
+
       <div className='keyfeature' data-aos="fade-up"
         data-aos-anchor-placement="top-bottom">
 
         <div className='text'>
           <h1 className='head' data-aos="fade-up"
             data-aos-anchor-placement="top-center">
-            Key features to add value to your business
+            Why should you make us part of your content journey?
           </h1>
-          <h2 className='smalltext' data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
-            This sounds simple, but it is beneficial to your business success.
-          </h2>
         </div>
         <div className='card-style' >
           <div className='feature-card' data-aos="fade-up"
@@ -243,6 +252,9 @@ function App() {
         {/* <img className='bg-feature' src={background} />  */}
       </div>
 
+
+      <div id="about_founder"></div>
+
       <div className='founder' >
         <h1 data-aos="fade-up"
           data-aos-anchor-placement="top-center">Founder</h1>
@@ -257,21 +269,21 @@ function App() {
               <p>Founder</p>
             </div>
             <div className='socail'>
-              <img src={linkedin} alt="bg" />
-              <img src={linkedin} alt="bg" />
-              <img src={linkedin} alt="bg" />
+              <img src={linkedin} alt="bg" className="grow" />
+              <img src={linkedin} alt="bg" className="grow" />
+              <img src={linkedin} alt="bg" className="grow" />
             </div>
 
           </div>
         </div>
       </div>
 
-
+      <div id="foot"></div>
 
       <div className="foot" >
         <svg width="1280" height="461" viewBox="0 0 1280 461" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect y="1.01611" width="1280" height="458.988" fill="#8C52FF" />
-          <path d="M1280.5 25.5092C1082.48 0.584789 424.033 0.584789 0 52.0952V0.584789H1280.5V25.5092Z" fill="#0E0C12" className='footer'  />
+          <path d="M1280.5 25.5092C1082.48 0.584789 424.033 0.584789 0 52.0952V0.584789H1280.5V25.5092Z" fill="#0E0C12" className='footer' />
         </svg>
 
         <div className='main-content' >
@@ -279,23 +291,25 @@ function App() {
             <div className="cond">
               <div className='footer-content'>Kontent Media is the best solution for your startup business</div>
               <div className='media'>
-                <img src={linkedin} alt="bg" />
-                <img src={linkedin} alt="bg" />
-                <img src={linkedin} alt="bg" />
+                <a href="#"> <img src={linkedin} alt="bg" className="grow" /> </a>
+                <a href="#"> <img src={linkedin} alt="bg" className="grow" /> </a>
+                <a href="#"> <img src={linkedin} alt="bg" className="grow" /> </a>
               </div>
             </div>
             <div className='btns-section'>
-              <a href="#" class="button2">Email Now</a>
-              <a href="#" class="button2">What'sapp Now</a>
+              <a href="#" class="button2 grow"id="emailMe" href="mailto:info@startingcore.com" >Email Now</a>
+              <a href="https://api.whatsapp.com/send phone=6350666858&text=This%20is%20a%20test" class="button2 grow" >WhatsApp Now</a>
               <div className='link-sect'>
-                <div className='text2'>
-                  Home
+                <div >
+                  <a href="#home" className='grow text2'>Home</a>
+
                 </div>
-                <div className='text2'>
-                  Testmonials
+                <div >
+                  <a href="#testmonials" className='grow text2'>Testmonials</a>
+
                 </div>
-                <div className='text2'>
-                  Our Services
+                <div >
+                  <a href="#service" className='grow text2'>Our Services</a>
                 </div>
               </div>
 
@@ -306,15 +320,15 @@ function App() {
           <hr />
           <div className='lowfoot'>
             <div className='leftsect'>
-              <div className='text1'>
+              <div className='text34 grow'>
                 Terms & Conditions
               </div>
-              <div className='text1'>
+              <div className='text34 grow'>
                 Privacy Policy
               </div>
             </div>
             <div className='rightsect'>
-              <div className='text1'>
+              <div className='text34'>
                 © Copyright 2022, All Rights Reserved
               </div>
             </div>
